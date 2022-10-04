@@ -1,0 +1,33 @@
+.resume-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+.resume {
+  display: flex;
+  width: 100%;      
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.resume-img {
+  max-width: 100;
+  transition: all .2 ease-out;
+}
+.resume-img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition:ease-out 200ms;
+    -webkit-scale: 1.1;
+    scale: 1.1;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .resume-img {
+    width: 80%;
+  }
+}

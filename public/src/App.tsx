@@ -1,7 +1,8 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import {NavBar , AnimatedRoutes} from "./components"
+import NavBar from "./components/NavBar/Navbar";
+import AnimtaedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Router>
         <div>
           <NavBar />
-          <AnimatedRoutes />
+          <AnimtaedRoutes />
         </div>
       </Router>
     </div>

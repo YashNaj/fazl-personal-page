@@ -70,7 +70,8 @@
     position: absolute;
     top: 90px;
     height: 100vh;
-    background:     hsla(350, 73%, 47%, 1);
+    background: white;
+    
 
     z-index: 999;
     width: 100%;
@@ -147,6 +148,9 @@
     font-size: 30px;
     color: rgb(86, 117, 230);
   }
-  
+  .icon-placeholder:hover{
+    color:hsla(350, 73%, 47%, 1);
+    transistion: ease-in;
+    animation-duration: 400ms;
+  }
 }
-

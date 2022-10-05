@@ -1,5 +1,4 @@
-import * as React from "react";
-import { motion } from "framer-motion";
+import { makeUseVisualState, motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 
 const variants = {

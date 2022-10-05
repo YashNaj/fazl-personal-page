@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
@@ -24,10 +24,8 @@ const sidebar = {
   },
 };
 export const MobileNav = () => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+  const [isOpen, toggleOpen] = useCycle(false, true);  
   const containerRef = useRef(null);
-  const { height } = useDimensions(containerRef);
-
   return (
     <motion.div
       className="mobile-nav"
@@ -35,7 +33,7 @@ export const MobileNav = () => {
       ref={containerRef}
     >
       <motion.div className="background" variants={sidebar} />
-      <motion.div>
+      <motion.div style={{ display: isOpen ? 'block' : 'none'}}>
         <Navigation />
       </motion.div>
 

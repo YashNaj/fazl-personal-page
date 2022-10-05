@@ -1,14 +1,26 @@
 .work-container{
+    display: flex;;
     justify-content: center;
     align-items: center;
     margin: 0;
     z-index: 1;
     overflow: hidden;
+    top:90px;
 }
 .work-content{
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+a {
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 767px) {
+    .work-content{
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }

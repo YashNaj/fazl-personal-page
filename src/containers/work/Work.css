@@ -6,6 +6,7 @@
     z-index: 1;
     overflow: hidden;
     top:90px;
+    height: 100%;
 }
 .work-content{
     width: 100vw;
@@ -19,8 +20,12 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+    .work-container{
+        flex-direction: column;
+    }
     .work-content{
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        height: 100vh;
     }
 }

@@ -6,7 +6,11 @@ import "react-multi-carousel/lib/styles.css";
 export const LensMag = () => {
   return (
     <AnimatePresence>
-      <motion.div className="fazl__portfolio-item-expanded-lens">
+      <motion.div className="fazl__portfolio-item-expanded-lens"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: 'easeIn', duration: 0.5,}}>
         <motion.div className="img-header-lens" />
         <motion.div className="expanded-content-lens">
           <h1>LENS Magazine</h1>

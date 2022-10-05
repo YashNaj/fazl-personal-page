@@ -6,11 +6,9 @@
   height: 90px;
   position: fixed;
   top: 0;
-  z-index: 99;
   background: transparent;
   -webkit-backdrop-filter: blur(400px) saturate(90%);
   backdrop-filter: blur(400px) saturate(90%);
-  position: absolute;
   z-index: 998;
 }
 .Nav__container {
@@ -69,7 +67,7 @@
   .background{
     position: absolute;
     top: 90px;
-    height: 100vh;
+    height: 30vh;
     background: white;
     
 

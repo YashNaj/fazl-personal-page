@@ -1,0 +1,52 @@
+.footer-container{
+    display: flex; 
+    -webkit-backdrop-filter: blur(400px) saturate(90%);
+    backdrop-filter: blur(400px) saturate(90%);
+    width: 100vw;
+    height: auto;
+    color: white;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.contact-me-heading{
+    display: grid;
+    place-content: center;
+    margin-left: 1rem;
+}
+.contact-link-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    align-items: flex-end;
+    color: white;
+
+}
+.contact-link-container a{
+    text-decoration: none !important;
+    color: white;
+    cursor: pointer !important;
+    margin: 1rem 0rem;
+    font-weight: bold;
+}
+.contact-link-container a:hover{
+    color: rgb(118, 86, 226);
+    cursor: pointer;
+}  
+@media screen and (max-width: 768px){
+    .contact-heading{
+       font-size: 22px;
+    }
+    .contact-link-container a{
+        text-decoration: none !important;
+        color: white;
+        cursor: pointer !important;
+        margin: .5rem 0rem;
+        font-weight: bold;
+    }
+}

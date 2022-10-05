@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import {NavBar , AnimatedRoutes} from "./components"
+import {NavBar , AnimatedRoutes, Footer} from "./components"
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <div>
           <NavBar />
           <AnimatedRoutes />
+          <Footer />
         </div>
       </Router>
     </div>

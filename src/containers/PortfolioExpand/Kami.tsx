@@ -6,7 +6,11 @@ import "react-multi-carousel/lib/styles.css";
 export const Kami = () => {
   return (
     <AnimatePresence>
-      <motion.div className="fazl__portfolio-item-expanded-kami">
+      <motion.div className="fazl__portfolio-item-expanded-kami"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: 'easeIn', duration: 0.5,}}>
         <motion.div className="img-header-kami" />
         <motion.div className="expanded-content-kami">
           <h1>Kami</h1>

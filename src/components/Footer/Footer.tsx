@@ -9,11 +9,11 @@ export const Footer = () => {
           <motion.h1 className="contact-heading">Contact Me</motion.h1>
         </motion.div>
         <motion.div className="contact-link-container">
-          <motion.a href="" target="_blank">
+          <motion.a
+            href="https://www.linkedin.com/in/fazl-mojaddedi-500976241/"
+            target="_blank"
+          >
             LinkedIn
-          </motion.a>
-          <motion.a href="" target="_blank">
-            Call Me
           </motion.a>
           <motion.a href="" target="_blank">
             fmojaddedi@gmail.com

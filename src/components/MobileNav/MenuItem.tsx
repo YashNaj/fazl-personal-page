@@ -1,8 +1,8 @@
 import * as React from "react";
-import { motion } from "framer-motion";
+import { motion, useCycle } from "framer-motion";
 import { NavLink } from "react-router-dom";
-
-const variants = {
+import { MobileNav } from "./MobileNav";
+const items = {
   open: {
     y: 0,
     opacity: 1,
@@ -18,14 +18,18 @@ const variants = {
     }
   }
 };
-export const MenuItem = ({ i }:any) => {
+export const MenuItem = ({ i }: any) => {
+
   return (
     <motion.li
-      variants={variants}
+      variants={items}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
+
+
     >
-      <NavLink to={i} className="icon-placeholder">
+      <NavLink to={i} className="icon-placeholder" 
+            >
         {i}
       </NavLink>
     </motion.li>

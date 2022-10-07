@@ -29,7 +29,9 @@ export const NavBar = () => {
             </li>
           </ul>
         </div>
+        <div className="Nav__container-mobile">
         <MobileNav/>
+        </div>
       </div>
     </nav>
   );

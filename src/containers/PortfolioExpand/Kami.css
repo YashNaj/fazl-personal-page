@@ -1,6 +1,5 @@
 .fazl__portfolio-item-expanded-kami {
   width: 100%;
-  height: 90vh;
   display: flex; 
   flex-direction: column;
   grid-template-columns: 1fr;

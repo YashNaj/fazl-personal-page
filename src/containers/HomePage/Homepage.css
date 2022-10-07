@@ -2,36 +2,55 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 90px;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     z-index: 0;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start/;
     color: white;
     position:relative;
+
 }
 .fazl-home{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: 100%;
+    width: 100%;
 }
 .fazl-heading{
     font-size: 10rem;
     display: flex;
-    align-self: flex-start;
+    justify-content: center;
+    align-self: center;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    align-self: flex-start;
     text-align: left;
 }
 .home-paragraph{
     font-size: 30px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
+}
+@media screen and (max-width :768px) {
+    .fazl-heading{ 
+        font-size: 3.5rem;
+        justify-content: center;
+    }   
+    .fazl-home{
+        margin: 1rem 1.5rem;
+        width: 100vw;
+        margin: 0;
+    }
+    .home-paragraph{
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        margin: 1rem .5rem;
+    }
 }
 @media screen and (max-width : 375px) {
     .fazl-heading{ 
@@ -41,13 +60,4 @@
         font-size: 14px;
     }
     
-}
-@media screen and (max-width :768px) {
-    .fazl-heading{ 
-        font-size: 3.5rem;
-    }   
-    .home-paragraph{
-        font-size: 30px;
-        font-weight: 200;
-    }
 }

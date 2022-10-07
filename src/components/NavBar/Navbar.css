@@ -3,20 +3,27 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 90px;
-  position: fixed;
+  height: 10vh;
+  position: sticky;
   top: 0;
   background: transparent;
-  -webkit-backdrop-filter: blur(400px) saturate(90%);
-  backdrop-filter: blur(400px) saturate(90%);
+  -webkit-backdrop-filter: blur(40px) saturate(90%);
+  backdrop-filter: blur(40px) saturate(90%);
   z-index: 998;
 }
 .Nav__container {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  height: 10vh;
   z-index: 998;
   font-weight: 900;
+  align-items: center;
+}
+.Nav__container-mobile{
+  display: none;
+  z-index: 998;
+
 }
 .Nav__item-wrapper{
   list-style: none;
@@ -47,6 +54,13 @@
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .Nav__container-mobile{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
   .mobile-nav{
     display: flex;
     background: none;
@@ -55,7 +69,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 100vw;
     z-index: -99;
   }
   .Nav__right{
@@ -66,33 +80,38 @@
   }
   .background{
     position: absolute;
-    top: 90px;
+    top: 10vh;
     height: 30vh;
-    background: white;
+    background: rgba(255, 255, 255, 0.992);
     
 
     z-index: 999;
-    width: 100%;
+    width: 100vw;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     backdrop-filter: blur(40px) saturate(90%);
     -webkit-backdrop-filter: blur(400px);
   }
   button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     outline: none; 
     border: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     cursor: pointer;
-    position: absolute;
-    top: 25px;
-    right: 15px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background: transparent;
     z-index: 999;
+    padding:0;
+    position: absolute;
+    right: 0;
+    top: 2.1vh;
+    right:4vw;
   }
   ul,
   li {
@@ -102,11 +121,14 @@
   ul {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 90px;
-    width: 300px;
+    top: 10vh;
+    width: 100vw;
     z-index: 999;
-    margin-top: 1rem;
+
+    height: 30vh;
   }
   
   li {
@@ -119,20 +141,6 @@
     width: 100%;
     justify-content: center;
     color: white;
-  }
-  .refresh {
-    padding: 10px;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    width: 20px;
-    height: 20px;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
   }
   .icon-placeholder {
     display: flex;
@@ -148,7 +156,13 @@
   }
   .icon-placeholder:hover{
     color:hsla(350, 73%, 47%, 1);
-    transistion: ease-in;
+    transition: ease-in;
     animation-duration: 400ms;
+  }
+}
+@media screen and (max-width: 375px) {
+  button{
+    top: 1.5vh;
+    right: 2vh;
   }
 }

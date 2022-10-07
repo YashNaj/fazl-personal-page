@@ -5,8 +5,8 @@
     margin: 0;
     z-index: 0;
     overflow: hidden;
-    top:90px;
-    height: 90vh;
+    top:10vh;
+    height: 80vh;
 }
 .work-content{
     width: 100vw;

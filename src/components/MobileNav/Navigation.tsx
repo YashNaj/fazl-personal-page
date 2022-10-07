@@ -1,7 +1,7 @@
 import { makeUseVisualState, motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 
-const variants = {
+const navigation = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
   },
@@ -11,7 +11,7 @@ const variants = {
 };
 
 export const Navigation = () => (
-  <motion.ul variants={variants}>
+  <motion.ul variants={navigation}>
     {itemIds.map(i => (
       <MenuItem i={i} key={i} />
     ))}

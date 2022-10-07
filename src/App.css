@@ -1,4 +1,6 @@
 @import url("https://use.typekit.net/kaa7gct.css");
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 html {
   scroll-behavior: smooth;
   background: hsla(350, 73%, 47%, 1);
@@ -20,7 +22,7 @@ html {
     hsla(350, 73%, 47%, 1) 0%,
     hsla(230, 33%, 47%, 1) 100%
   );
-  height: 100%;
+  height: auto;
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CF203E", endColorstr="#505DA0", GradientType=1 );
 
@@ -50,31 +52,16 @@ body{
     hsla(350, 73%, 47%, 1) 0%,
     hsla(230, 33%, 47%, 1) 100%
   );
+  height: auto;
 }
 .App {
   text-align: center;
   font-family: "futura-pt", sans-serif;
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 .App-link {
   color: #61dafb;
-}
-.margin-content {
-  margin: 2rem 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 90%;
-  width: 90%;
-}
-.page-setting {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  z-index: 1;
-  position: relative;
-  top: 90px;
 }

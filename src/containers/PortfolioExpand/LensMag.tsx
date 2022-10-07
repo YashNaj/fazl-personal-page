@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import "./LensMag.css";
 import "react-multi-carousel/lib/styles.css";
+import { LensGallery } from "../../components/ImageGalleries/LensGallery";
 
 export const LensMag = () => {
   return (
@@ -24,7 +25,9 @@ export const LensMag = () => {
             We used Illustrator to create the Vector graphics such as the logo.
           </p>
         </motion.div>
-        <motion.div className="more-thumbnails"></motion.div>
+        <motion.div className="more-thumbnails">
+          <LensGallery/>
+        </motion.div>
       </motion.div>
     </AnimatePresence>
   );

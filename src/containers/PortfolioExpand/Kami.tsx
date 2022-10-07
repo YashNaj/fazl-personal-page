@@ -2,15 +2,18 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import "./Kami.css";
 import "react-multi-carousel/lib/styles.css";
+import { KamiGalley } from "../../components/ImageGalleries/KamiGalley";
 
 export const Kami = () => {
   return (
     <AnimatePresence>
-      <motion.div className="fazl__portfolio-item-expanded-kami"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ ease: 'easeIn', duration: 0.5,}}>
+      <motion.div
+        className="fazl__portfolio-item-expanded-kami"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ ease: "easeIn", duration: 0.5 }}
+      >
         <motion.div className="img-header-kami" />
         <motion.div className="expanded-content-kami">
           <h1>Kami</h1>
@@ -28,7 +31,9 @@ export const Kami = () => {
             experience for the user.
           </p>
         </motion.div>
-        <motion.div className="more-thumbnails-kami"></motion.div>
+        <motion.div className="more-thumbnails-kami">
+          <KamiGalley />
+        </motion.div>
       </motion.div>
     </AnimatePresence>
   );

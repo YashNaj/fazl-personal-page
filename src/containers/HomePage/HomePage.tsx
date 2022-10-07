@@ -14,9 +14,14 @@ export const HomePage = () => {
           <div className="fazl-home margin-content">
             <h1 className="fazl-heading">Hi, I'm Fazl!</h1>
             <div className="home-paragraph">
+              <p>
               A multidisciplinary designer who has graduated near the top of his
-              class from University of California, San Diego. Exploring the
+              class from University of California, San Diego.
+              </p>
+              <p>
+              Exploring the
               intricacies of design through a user-based mindset in all facets.
+              </p>
             </div>
             <div className="learn-more"></div>
           </div>

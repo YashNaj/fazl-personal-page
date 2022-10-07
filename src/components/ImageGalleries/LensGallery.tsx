@@ -53,9 +53,9 @@ const LensPics = [
 
 export const LensGallery = () => {
   return (
-    <motion.div>
+    <motion.div className='lens-gallery'>
       <ImageGallery items={LensPics}
-      thumbnailPosition = "left" />{" "}
+      thumbnailPosition = "left" />
     </motion.div>
   );
 };

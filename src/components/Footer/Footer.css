@@ -6,7 +6,7 @@
     height: 10vh;
     color: white;
     justify-content: center;
-    position: sticky;
+    position: relative;
     bottom: 0;
     left: 0;
 
@@ -37,10 +37,17 @@
     margin: 1rem 0rem;
     font-weight: bold;
 }
+.icon{
+    font-size: 30px;
+}
 .contact-link-container a:hover{
     color: rgb(118, 86, 226);
     cursor: pointer;
-}  
+}
+.linkedin{
+    font-size: 20px;
+} 
+
 @media screen and (max-width: 768px){
     .contact-heading{
        font-size: 22px;
@@ -51,5 +58,8 @@
         cursor: pointer !important;
         margin: .5rem 0rem;
         font-weight: bold;
+    }
+    .icon{
+        font-size: 20px;
     }
 }

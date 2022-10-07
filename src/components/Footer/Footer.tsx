@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { motion } from "framer-motion";
 import "./Footer.css";
 export const Footer = () => {
@@ -9,15 +12,15 @@ export const Footer = () => {
           <motion.h1 className="contact-heading">Contact Me</motion.h1>
         </motion.div>
         <motion.div className="contact-link-container">
-          <motion.a
-            href="https://www.linkedin.com/in/fazl-mojaddedi-500976241/"
-            target="_blank"
+            <motion.a
+              href="https://www.linkedin.com/in/fazl-mojaddedi-500976241/"
+              target="_blank"
           >
-            LinkedIn
-          </motion.a>
-          <motion.a href="" target="_blank">
-            fmojaddedi@gmail.com
-          </motion.a>
+            <FontAwesomeIcon icon={faLinkedin} className= "icon"/>
+            </motion.a>
+            <motion.a href="mailto: fmojaddedi@gmail.com" target="_blank">
+            <FontAwesomeIcon icon= {faEnvelope} className= "icon"/>
+            </motion.a>
         </motion.div>
       </motion.div>
     </motion.div>

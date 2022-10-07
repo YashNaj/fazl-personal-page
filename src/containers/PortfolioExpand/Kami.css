@@ -6,7 +6,7 @@
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 20px;
   top: 90px;
-  background: rgb(245, 202, 48);
+  background: rgb(219, 186, 67);
   overflow: scroll;
 }
 .img-header-kami {
@@ -27,7 +27,6 @@
   flex-direction: column;
   color: white;
   justify-content: center;
-  background: rgb(245, 202, 48);
 }
 .expanded-content-kami h1{
     text-align: left;

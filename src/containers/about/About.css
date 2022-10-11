@@ -5,6 +5,9 @@
     height: 80vh;
     position: relative;
     z-index: 0;
+    background-image: url(../../images//background.jpeg);
+    background-repeat:no-repeat;
+    background-size: contain;
 }
 .about-content{
     display: flex;
@@ -12,6 +15,8 @@
     justify-content: flex-start;
     color: white;
     text-align: left;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 .about-heading{
     font-size: 90px;

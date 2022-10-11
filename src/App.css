@@ -3,27 +3,8 @@
 
 html {
   scroll-behavior: smooth;
-  background: hsla(350, 73%, 47%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(350, 73%, 47%, 1) 0%,
-    hsla(230, 33%, 47%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(350, 73%, 47%, 1) 0%,
-    hsla(230, 33%, 47%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(350, 73%, 47%, 1) 0%,
-    hsla(230, 33%, 47%, 1) 100%
-  );
   height: auto;
-
+  background-image: url(./images/background.jpeg);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CF203E", endColorstr="#505DA0", GradientType=1 );
 
 }
@@ -33,25 +14,6 @@ html {
 }
 body{
   scroll-behavior: smooth;
-  background: hsla(350, 73%, 47%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(350, 73%, 47%, 1) 0%,
-    hsla(230, 33%, 47%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(350, 73%, 47%, 1) 0%,
-    hsla(230, 33%, 47%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(350, 73%, 47%, 1) 0%,
-    hsla(230, 33%, 47%, 1) 100%
-  );
   height: auto;
 }
 .App {

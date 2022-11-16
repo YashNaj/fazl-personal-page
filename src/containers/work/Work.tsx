@@ -26,6 +26,11 @@ export const Work = () => {
               image={LensImage}
             />
           </Link>
+          <motion.div initial={{ x: 0, y: -10 }}
+            animate={{ x: 0, y: 0 }}
+          exit = {{x:0, y : -10}}> 
+          
+          </motion.div>
           <Link to="/work/kami">
             <PortfolioItems
               className="kami__portfolio-item"

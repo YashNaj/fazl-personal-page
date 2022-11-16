@@ -3,15 +3,12 @@
     flex-direction: column;
     position: relative;
     top: 90px;
-    width: 100%;
-    height: 100%;
     z-index: 1;
     justify-content: center;
     align-items: center;
     color: white;
 }
 .fazl-home{
-
     position: relative;
     display: flex;
     flex-direction: column;
@@ -40,7 +37,6 @@
     .home-paragraph{
         font-size: 14px;
     }
-    
 }
 @media screen and (max-width :768px) {
     .fazl-heading{ 

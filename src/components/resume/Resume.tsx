@@ -4,35 +4,36 @@ import "./Resume.css";
 export const Resume = () => {
   return (
     <AnimatePresence>
-        <motion.div
-          className="resume-container content"
-          id="resume"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ ease: "easeIn", duration: 0.5 }}
-        >
-        <motion.div className="resume"
-          whileTap={{ scale: 1.1 }}
-          whileHover={{scale: 1.1}}>
-            <a className = "resume-button"
-              rel ="noopener noreferrer"
-              href="../../images/Resume.pdf"
-              title="Fazl__Resume"
-            target='_blank'
-            download 
-            >
-              <img alt = "fazl-resume"
-                className="resume-img"
+      <motion.div
+        className="resume-container content"
+        id="resume"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ ease: "easeIn", duration: 0.5 }}
+      >
+        <motion.div className="resume">
+          <a
+            className="resume-button"
+            rel="noopener noreferrer"
+            href="../../images/Resume.pdf"
+            title="Fazl__Resume"
+            target="_blank"
+            download="../../images/Resume.pdf"
+          >
+            <motion.img
+              alt="fazl-resume"
+              className="resume-img"
               src="https://i.ibb.co/fHt5Q4c/Resume.jpg"
-              />
+              whileTap={{ scale: 1.1 }}
+              whileHover={{ scale: 1.1 }}
+            />
           </a>
-          <motion.h1 className = "resume-heading"> 
+          <motion.h1 className="resume-heading">
             Click or Tap to Download
           </motion.h1>
-          </motion.div>
         </motion.div>
+      </motion.div>
     </AnimatePresence>
   );
 };
-

@@ -12,19 +12,25 @@ export const Resume = () => {
           exit={{ opacity: 0 }}
           transition={{ ease: "easeIn", duration: 0.5 }}
         >
-          <div className="resume">
-            <a 
+        <motion.div className="resume"
+          whileTap={{ scale: 1.1 }}
+          whileHover={{scale: 1.1}}>
+            <a className = "resume-button"
               rel ="noopener noreferrer"
-              href="https://turquoise-marlyn-82.tiiny.site/"
+              href="../../images/Resume.pdf"
               title="Fazl__Resume"
-              target='_blank'
+            target='_blank'
+            download 
             >
               <img alt = "fazl-resume"
                 className="resume-img"
-                src="https://i.postimg.cc/kgwD8M9z/Resume-copy.png"
+              src="https://i.ibb.co/fHt5Q4c/Resume.jpg"
               />
-            </a>
-          </div>
+          </a>
+          <motion.h1 className = "resume-heading"> 
+            Click or Tap to Download
+          </motion.h1>
+          </motion.div>
         </motion.div>
     </AnimatePresence>
   );

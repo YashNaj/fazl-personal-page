@@ -23,8 +23,8 @@ export const About = () => {
                   condition and psyche, numerous experiences involving
                   collaborations with a plethora of different individuals, and
                   an inherent empathetic mindset to my fellow man, my goal is a
-                  career in the field of UI/UX which will truly allow me to
-                  flourish and show my varied skillset.
+                  career which will truly allow me to synthesize all of these
+                  into a truly unique skillset
                 </p>
                 <p className="about-paragraph">
                   All the projects related to design you see here are either

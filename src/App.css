@@ -4,26 +4,64 @@
 html {
   scroll-behavior: smooth;
   height: auto;
-  background-image: url(./images/background.jpeg);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CF203E", endColorstr="#505DA0", GradientType=1 );
-
 }
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
 }
-body{
+.root{
+  height:auto;
+}
+body {
   scroll-behavior: smooth;
   height: auto;
 }
 .App {
   text-align: center;
   font-family: "futura-pt", sans-serif;
+  height: auto;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: auto;
+    backdrop-filter: blur(110px);
+  -webkit-backdrop-filter: blur(110px);
 }
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/background.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -999;
+  top: 0;
+  overflow: hidden !important;
+}
+@media screen and (max-width: 2560px) {
+  .background {
+    background-position: center -900px;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+.content{
+  flex-grow: 4;
+  height: 100%;
+  overflow: auto;
 
-.App-link {
-  color: #61dafb;
+}
+@media screen and (max-width: 1368px) {
+  .background {
+    background-position: center -1400px;
+    background-color: #1c1323;
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .background {
+    background-position: center center;
+    transform: scale(1);
+    height: 100%;
+  }
 }

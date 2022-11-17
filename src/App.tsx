@@ -2,18 +2,19 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import {NavBar , AnimatedRoutes, Footer} from "./components"
-
+import { motion } from "framer-motion";
 function App() {
   return (
-    <div className="App">
+    <motion.div >
+      <motion.div className="background" />
       <Router>
-        <div>
+        <motion.div className = "App">
           <NavBar />
           <AnimatedRoutes />
           <Footer />
-        </div>
+        </motion.div>
       </Router>
-    </div>
+    </motion.div>
   );
 }
 

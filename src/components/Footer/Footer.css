@@ -1,63 +1,68 @@
-.footer-container{
-    display: flex; 
-    -webkit-backdrop-filter: blur(40px) saturate(90%);
-    backdrop-filter: blur(40px) saturate(90%);
-    width: 100%;
-    color: white;
-    justify-content: center;
-    bottom: 0;
-    left: 0;
-
+.footer-container {
+  display: flex;
+  -webkit-backdrop-filter: blur(40px) saturate(90%);
+  backdrop-filter: blur(40px) saturate(90%);
+  width: 100%;
+  color: white;
+  justify-content: center;
     z-index: 1;
+  flex-grow: 1;
+  height: 100%T;
 }
-.footer{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
-.contact-me-heading{
-    display: grid;
-    place-content: center;
-    margin-left: 1rem
+.contact-me-heading {
+  display: grid;
+  place-content: center;
+  margin-left: 1rem;
 }
-.contact-link-container{
-    display: flex;
-    flex-direction: column;
-    margin-right: 1rem;
-    align-items: flex-end;
-    color: white;
-
+.contact-link-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  align-items: flex-end;
+  color: white;
 }
-.contact-link-container a{
+.contact-link-container a {
+  text-decoration: none !important;
+  color: white;
+  cursor: pointer !important;
+  margin: 1rem 0rem;
+  font-weight: bold;
+}
+.icon {
+  font-size: 30px;
+}
+.contact-link-container a:hover {
+  color: rgb(118, 86, 226);
+  cursor: pointer;
+}
+.linkedin {
+  font-size: 20px;
+}
+@media screen and (max-width: 1368px) {
+  .contact-heading {
+    font-size: 22px;
+  }
+  .icon {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-heading {
+    font-size: 22px;
+  }
+  .contact-link-container a {
     text-decoration: none !important;
     color: white;
     cursor: pointer !important;
-    margin: 1rem 0rem;
+    margin: 0.5rem 0rem;
     font-weight: bold;
-}
-.icon{
-    font-size: 30px;
-}
-.contact-link-container a:hover{
-    color: rgb(118, 86, 226);
-    cursor: pointer;
-}
-.linkedin{
+  }
+  .icon {
     font-size: 20px;
-} 
-
-@media screen and (max-width: 768px){
-    .contact-heading{
-       font-size: 22px;
-    }
-    .contact-link-container a{
-        text-decoration: none !important;
-        color: white;
-        cursor: pointer !important;
-        margin: .5rem 0rem;
-        font-weight: bold;
-    }
-    .icon{
-        font-size: 20px;
-    }
+  }
 }

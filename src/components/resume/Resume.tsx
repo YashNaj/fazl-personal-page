@@ -5,7 +5,7 @@ export const Resume = () => {
   return (
     <AnimatePresence>
         <motion.div
-          className="resume-container"
+          className="resume-container content"
           id="resume"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

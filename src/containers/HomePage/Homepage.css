@@ -1,62 +1,78 @@
-.fazl-home-container{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    z-index: 0;
+.fazl-home-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: SCROLL;
+  z-index: 1;
+}
+.fazl-home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.fazl-heading {
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: left;
+  padding: 3rem;
+  border-radius: 40px;
+}
+.home-paragraph {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 40px;
+  width: fit-content;
+}
+@media screen and (max-width: 1368px) {
+  .fazl-heading {
+    font-size: 5rem;
+  }
+  .home-paragraph {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fazl-heading {
+    font-size: 3.5rem;
     justify-content: center;
-    align-items: flex-start;
-    color: white;
-    position:relative;
-    overflow: SCROLL;
-}
-.fazl-home{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    width: 100%;
-}
-.fazl-heading{
-    font-size: 10rem;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: left;
-}
-.home-paragraph{
-    font-size: 30px;
-    font-weight: bold;
     text-align: center;
+    margin: 0;
+    padding: 1rem;
+  }
+  .fazl-home {
+    margin: 1rem 1.5rem;
+    width: 100vw;
+    margin: 0;
+  }
+  .home-paragraph {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+  }
 }
-@media screen and (max-width :768px) {
-    .fazl-heading{ 
-        font-size: 3.5rem;
-        justify-content: center;
-    }   
-    .fazl-home{
-        margin: 1rem 1.5rem;
-        width: 100vw;
-        margin: 0;
-    }
-    .home-paragraph{
-        font-size: 20px;
-        font-weight: bold;
-        position: relative;
-        margin: 1rem .5rem;
-    }
-}
-@media screen and (max-width : 375px) {
-    .fazl-heading{ 
-        font-size: 3.5rem;
-    }   
-    .home-paragraph{
-        font-size: 14px;
-    }
-    
+@media screen and (max-width: 375px) {
+  .fazl-heading {
+    font-size: 3.5rem;
+  }
+  .home-paragraph {
+    font-size: 14px;
+  }
 }

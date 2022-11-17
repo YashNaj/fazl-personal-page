@@ -36,7 +36,8 @@ export const MobileNav = () => {
       animate={isOpen ? "open" : "closed"}
       ref={containerRef}
     >
-      <motion.div className="background" variants={sidebar} />
+      <motion.div className="background-nav" variants={sidebar} >
+      </motion.div>
       <motion.div
         style={{ display: isOpen ? "block" : "none" }}
         onClick={() => toggleOpen()}

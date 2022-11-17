@@ -1,6 +1,6 @@
 html {
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 body {
   margin: 0;
@@ -10,14 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-@media screen and (min-width: 2560px){  
-  html{
-    background-position: center 200px; 
-  }
 }

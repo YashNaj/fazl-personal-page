@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <AnimatePresence>
       <motion.div
-        className="about-container page-setting"
+        className="about-container content"
         id="about"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -13,7 +13,7 @@ export const About = () => {
         transition={{ ease: "easeIn", duration: 0.5 }}
       >
         {" "}
-        <div className="about-content margin-content">
+        <div className="about-content">
           <h1 className="about-heading">About Me</h1>
           <div className="about-description-container">
             <div className="about-description">

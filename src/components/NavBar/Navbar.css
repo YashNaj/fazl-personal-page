@@ -29,6 +29,7 @@
   width: 100%;
   display: flex;
   margin:0;
+  position: relative;
 }
 .Nav__right{
   display: flex;
@@ -47,6 +48,8 @@ li.Nav__item{
 }
 .Nav__link{
   font-weight: 600;
+  display: flex;
+  position: relative;
 }
 .Nav__link:hover,
 .Nav__fazl:hover {
@@ -172,4 +175,19 @@ li.Nav__item{
     top: 1.5vh;
     right: 2vh;
   }
+}
+.underline {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 15px; 
+  background: white;
+  opacity: 0.85;
+  margin: 0;
+}
+.Nav__link a { 
+  margin: 0;
+  text-align: center;
 }

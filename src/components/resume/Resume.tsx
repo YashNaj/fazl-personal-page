@@ -16,8 +16,8 @@ export const Resume = () => {
           <motion.a
             className="resume-button"
             rel="noopener noreferrer"
-            href = 'https://fazlmojo.com/Resume.pdf'
-            download
+            href = "../../images/Resume.txt"
+            download = "Resume.pdf"
             title="Fazl__Resume"
             target="_blank"
             initial={{ y: -100 }}

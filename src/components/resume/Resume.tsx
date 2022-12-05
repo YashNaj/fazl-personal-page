@@ -16,7 +16,7 @@ export const Resume = () => {
           <motion.a
             className="resume-button"
             rel="noopener noreferrer"
-            href = "/public/Resume.pdf"
+            href = "/Resume.pdf"
             download = "Resume.pdf"
             title="Fazl__Resume"
             initial={{ y: -100 }}

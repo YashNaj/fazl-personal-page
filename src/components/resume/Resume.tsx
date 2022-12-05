@@ -16,10 +16,10 @@ export const Resume = () => {
           <motion.a
             className="resume-button"
             rel="noopener noreferrer"
-            href="../../images/Resume.pdf"
+            href='../../images/Resume.pdf'
             title="Fazl__Resume"
             target="_blank"
-            download="../../images/Resume.pdf"
+            download
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ ease: "easeIn", duration: 0.5 }}

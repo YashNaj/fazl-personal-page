@@ -7,13 +7,25 @@ import { LensGallery } from "../../components/ImageGalleries/LensGallery";
 export const LensMag = () => {
   return (
     <AnimatePresence>
-      <motion.div className="fazl__portfolio-item-expanded-lens"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ ease: 'easeIn', duration: 0.5,}}>
-        <motion.div className="img-header-lens" />
-        <motion.div className="expanded-content-lens">
+      <motion.div
+        className="fazl__portfolio-item-expanded-lens"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ ease: "easeIn", duration: 0.5 }}
+      >
+        <motion.div
+          className="img-header-lens"
+          initial={{ y: 100 }}
+          animate={{ y: 0 }}
+          transition={{ ease: "easeOut", duration: 1.2 }}
+        />
+        <motion.div
+          className="expanded-content-lens"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 0.8, delay: 1.2 }}
+        >
           <h1>LENS Magazine</h1>
           <p>
             LENS was a creative magazine that was used as a platform to express
@@ -26,7 +38,7 @@ export const LensMag = () => {
           </p>
         </motion.div>
         <motion.div className="more-thumbnails">
-          <LensGallery/>
+          <LensGallery />
         </motion.div>
       </motion.div>
     </AnimatePresence>

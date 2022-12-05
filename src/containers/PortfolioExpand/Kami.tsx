@@ -14,8 +14,18 @@ export const Kami = () => {
         exit={{ opacity: 0 }}
         transition={{ ease: "easeIn", duration: 0.5 }}
       >
-        <motion.div className="img-header-kami" />
-        <motion.div className="expanded-content-kami">
+        <motion.div
+          className="img-header-kami"
+          initial={{ y: 100 }}
+          animate={{ y: 0 }}
+          transition={{ ease: "easeOut", duration: 1.2 }}
+        />
+        <motion.div
+          className="expanded-content-kami"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 0.2, delay: 1.0 }}
+        >
           <h1>Kami</h1>
           <p>
             Kami was a collaborative project where I was responsible for initial

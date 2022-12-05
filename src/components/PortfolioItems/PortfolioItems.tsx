@@ -23,11 +23,10 @@ export const PortfolioItems = ({ image, header, description, title }: any) => {
   const [expanded, setExpanded] = useState(false);
   return (
     <AnimateSharedLayout>
-      <motion.div className="fazl__portfolio-item-container" layout       whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            transition={transition}
-            variants={{ variants }}
-            animate={expanded ? "expanded" : "closed"}>
+      <motion.div className="fazl__portfolio-item-container" layout
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 1.02 }}
+      exit = {{opacity: 0}}>
         <motion.div className="fazl__portfoloio-item-image-container" layout>
           <motion.img
             layout

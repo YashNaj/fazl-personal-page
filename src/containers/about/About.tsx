@@ -24,7 +24,7 @@ export const About = () => {
                   collaborations with a plethora of different individuals, and
                   an inherent empathetic mindset to my fellow man, my goal is a
                   career which will truly allow me to synthesize all of these
-                  into a truly unique skillset
+                  into a truly unique skillset.
                 </p>
                 <p className="about-paragraph">
                   All the projects related to design you see here are either

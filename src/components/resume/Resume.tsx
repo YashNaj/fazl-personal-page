@@ -13,13 +13,16 @@ export const Resume = () => {
         transition={{ ease: "easeIn", duration: 0.5 }}
       >
         <motion.div className="resume">
-          <a
+          <motion.a
             className="resume-button"
             rel="noopener noreferrer"
             href="../../images/Resume.pdf"
             title="Fazl__Resume"
             target="_blank"
             download="../../images/Resume.pdf"
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ ease: "easeIn", duration: 0.5 }}
           >
             <motion.img
               alt="fazl-resume"
@@ -28,7 +31,7 @@ export const Resume = () => {
               whileTap={{ scale: 1.1 }}
               whileHover={{ scale: 1.1 }}
             />
-          </a>
+          </motion.a>
           <motion.h1 className="resume-heading">
             Click or Tap to Download
           </motion.h1>

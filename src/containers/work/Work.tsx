@@ -16,7 +16,9 @@ export const Work = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <motion.div className="work-content ">
+        <motion.div className="work-content" initial={{ y: -200, scale : .8 }}
+          animate={{ y: 0, scale: 1}}
+        transition= {{ease: "easeOut" , duration: .5}}>
           <Link to="/work/lens">
             <PortfolioItems
               id="lens"
